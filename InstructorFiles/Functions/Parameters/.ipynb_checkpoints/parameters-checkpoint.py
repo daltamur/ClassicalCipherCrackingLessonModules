@@ -13,3 +13,6 @@ def alberti_period_length():
 
 def beaufort_key():
     return list(bytes('CLOAK', 'utf-8'))
+
+def check_beaufort_decypher(testVal):
+    assert testVal=='FOLLOWTHECLUES'
