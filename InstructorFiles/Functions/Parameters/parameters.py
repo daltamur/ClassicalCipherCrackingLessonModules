@@ -14,13 +14,12 @@ def alberti_period_length():
     return 5
 
 def beaufort_key():
-    #For best results, make the key between 3 and 8 letters
+    #For best results, make the key between 3 and 8 letters, that way it isn't something that is too big for the student to work with
     return list(bytes('CLOAK', 'utf-8'))
 
 def check_beaufort_decypher(testVal):
     assert testVal=='FOLLOWTHECLUES'
     
-def get_hill_cipher_key():
-    #the video's byte length is divisible by 43, so we are forcing the
-    #key to be a 43x43 matrix. However, it will always be random and therefore different for everystudent
-    return np.random.randint(256, size=(43, 43))
+def transposition_key():
+    #Keep this key constant, this lesson requires the student to do a crib search on a text, and since that takes a long time I have hidden the key for encryption/decryption in the text
+    return list(bytes('DESURTION', 'utf-8'))
