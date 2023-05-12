@@ -17,8 +17,14 @@ def beaufort_key():
     #For best results, make the key between 3 and 8 letters, that way it isn't something that is too big for the student to work with
     return list(bytes('CLOAK', 'utf-8'))
 
+def check_alberti_decypher(testVal):
+    assert testVal=='TEST'
+    
 def check_beaufort_decypher(testVal):
     assert testVal=='FOLLOWTHECLUES'
+    
+def check_transposition_decypher(testVal):
+    assert testVal=='THEFEELINGISMUTUAL'
     
 def transposition_key():
     #Keep this key constant, this lesson requires the student to do a crib search on a text, and since that takes a long time I have hidden the key for encryption/decryption in the text
